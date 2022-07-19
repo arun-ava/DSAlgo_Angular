@@ -3,8 +3,10 @@
 
 
 export function longestPalindrome(s: string): string {
+    let se = new Set();
+    let m = new Map();
+    
     let dpOdd = new Array<number>(s.length).fill(0);
-
     for(let i=1; i<s.length; i++) {
       for(let j=i; j+i<s.length; j++) {
         if(s.charAt(j+i) === s.charAt(j-i) && dpOdd[j] >= i-1) {

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { reverseBits } from './Bitwise/ReverseBinary';
+import { maxResult } from './DP/JumpGameVI';
 import { longestPalindrome } from './DP/longestPallindromicSubstring';
 import { threeSum } from './HashMap/ThreeSum';
 import { twoSum } from './HashMap/TwoSum';
@@ -10,6 +11,9 @@ import { strStr } from './String/ImplementIndexOf';
 import { romanToInt } from './String/RomanToInteger';
 import { myAtoi, myAtoi2 } from './String/stringToIntegerAToI';
 import { pivotIndex } from './Two-Pointers/BalanceInArray';
+import { mergeSortRunner } from './Sorting/MergeSortRecursive';
+import { quickSortRunner } from './Sorting/QuickSortRecursive';
+import { Queue } from './Queue/Queue';
 
 @Component({
   selector: 'app-root',
@@ -30,11 +34,19 @@ export class AppComponent implements OnInit {
     // console.log([-1,0,1,2,-1,-4].toString());
     // console.log(minMoves2([1,2,3]));
     // console.log(minMoves2([1,0,0,8,6]));
-    console.log(minMovesmedian([1,10,2,9]));
+    //console.log(minMovesmedian([1,10,2,9]));
+
+    let q = new Queue<number>(5);
+  
+    console.log('fin');
   }
 
   func1() {
     let a = [1,2,3,4,5,6];
+
+
+
+
 
     a.sort((x,y) => {
       if(x<y) {
