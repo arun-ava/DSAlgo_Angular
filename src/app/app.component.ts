@@ -14,6 +14,15 @@ import { pivotIndex } from './Two-Pointers/BalanceInArray';
 import { mergeSortRunner } from './Sorting/MergeSortRecursive';
 import { quickSortRunner } from './Sorting/QuickSortRecursive';
 import { Queue } from './Queue/Queue';
+import { numIslandsRunner } from './Graphs/NumberOfIslands';
+import { segmentTreeRunner } from './Trees/SegmentTreeRunner';
+import { searchRangeRunner } from './Search/FindFirstLastPositionOfArray';
+import { longestValidParenthesesRunner } from './Stacks/LongestValidParentheses';
+import { wordBreakRunner } from './DP/WordBreak';
+import { executeSearchTreeRunner } from './M-Tree/SearchTextOccurenceInSubTrees';
+import { brokenCalcRunner } from './Greedy/BrokenCalculator';
+import { validPallindromeRunner } from './Greedy/ValidPallindrome';
+import { removeDuplicateLettersRunner } from './Greedy/RemoveDuplicateLetters';
 
 @Component({
   selector: 'app-root',
@@ -38,6 +47,9 @@ export class AppComponent implements OnInit {
 
     let q = new Queue<number>(5);
   
+    // searchRangeRunner();
+    removeDuplicateLettersRunner();
+
     console.log('fin');
   }
 
