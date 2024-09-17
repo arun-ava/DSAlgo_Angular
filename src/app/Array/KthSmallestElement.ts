@@ -15,7 +15,7 @@ function kthSmallest(matrix: number[][], k: number): number {
  * lets say (0,1) is smaller
  * then check (1,0), (1,1), (0,2) and iterate till k elements have been checked
  * print the kth element
- * @param matrix 
+ * @param matrix ss
  * @param k 
  */
 function method1(matrix: number[][], k: number): number {

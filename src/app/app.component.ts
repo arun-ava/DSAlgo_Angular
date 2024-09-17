@@ -23,6 +23,15 @@ import { executeSearchTreeRunner } from './M-Tree/SearchTextOccurenceInSubTrees'
 import { brokenCalcRunner } from './Greedy/BrokenCalculator';
 import { validPallindromeRunner } from './Greedy/ValidPallindrome';
 import { removeDuplicateLettersRunner } from './Greedy/RemoveDuplicateLetters';
+import { reversVowelsRunner } from './Two-Pointers/ReverseVowelsOfAString';
+import { removeStarsFromStringRunner } from './String/RemovingStarsFromString';
+import { implementingMonotonicStackRunner } from './Stacks/ImplementingMonotonicStack';
+import { survivedRobotsHealthsRunner } from './Simulation/SurvivedRobotsHealths';
+import { countOfAtomsRunner } from './String/NumberOfAtoms';
+import { floodFillRunner } from './Array/FloodFill';
+import { splitListToPartsRunner } from './LinkedList/SplitListToParts';
+import { validMountainArrayRunner } from './Array/ValidMountainArray';
+import { minimumBitFlipsRunner } from './Bitwise/MinimumBitFlips';
 
 @Component({
   selector: 'app-root',
@@ -33,97 +42,7 @@ export class AppComponent implements OnInit {
   title = 'leetcode';
 
   ngOnInit(){
-    // console.log(myAtoi2('42'));
-    // console.log(myAtoi2('-42'));
-    // console.log(myAtoi2('42 with words'));
-    // console.log(myAtoi2('-42 with words'));
-    // console.log(myAtoi2('       -42 with words'));
-    // console.log(myAtoi2('-91283472332'));
-    // console.log(myAtoi2('91283472332'));
-    // console.log([-1,0,1,2,-1,-4].toString());
-    // console.log(minMoves2([1,2,3]));
-    // console.log(minMoves2([1,0,0,8,6]));
-    //console.log(minMovesmedian([1,10,2,9]));
-
-    let q = new Queue<number>(5);
-  
-    // searchRangeRunner();
-    removeDuplicateLettersRunner();
-
-    console.log('fin');
+    minimumBitFlipsRunner();
   }
-
-  func1() {
-    let a = [1,2,3,4,5,6];
-
-
-
-
-
-    a.sort((x,y) => {
-      if(x<y) {
-        return -1;
-      } else {
-        return 1;
-      }
-    });
-
-    console.log(a);
-  }
-
-  func2() {
-    let a = [1,2,3,4,5,6];
-
-    a.sort((x,y) => {
-      return 1;
-    });
-
-    console.log(a);
-  }
-
-  func3() {
-    let a = [1,2,3,4,5,6];
-
-    a.sort((x,y) => {
-      return -1;
-    });
-
-    console.log(a);
-  }
-
-  func4() {
-    let a = [6,5,4,3,2,1];
-
-    a.sort((x,y) => {
-      if(x>y) {
-        return -1;
-      } else {
-        return 1;
-      }
-    });
-
-    console.log(a);
-  }
-
-  func5() {
-    let a = [6,5,4,3,2,1];
-
-    a.sort((x,y) => {
-      return 1;
-    });
-
-    console.log(a);
-  }
-
-  func6() {
-    let a = [6,5,4,3,2,1];
-
-    a.sort((x,y) => {
-      return -1;
-    });
-
-    console.log(a);
-  }
-
   
 }
