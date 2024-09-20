@@ -32,6 +32,7 @@ import { floodFillRunner } from './Array/FloodFill';
 import { splitListToPartsRunner } from './LinkedList/SplitListToParts';
 import { validMountainArrayRunner } from './Array/ValidMountainArray';
 import { minimumBitFlipsRunner } from './Bitwise/MinimumBitFlips';
+import { uncommonFromSentencesRunner } from './HashMap/UncommonWords';
 
 @Component({
   selector: 'app-root',
@@ -42,7 +43,7 @@ export class AppComponent implements OnInit {
   title = 'leetcode';
 
   ngOnInit(){
-    minimumBitFlipsRunner();
+    uncommonFromSentencesRunner();
   }
   
 }
